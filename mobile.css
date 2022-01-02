@@ -1,0 +1,116 @@
+@media only screen
+and (min-width: 320px)
+and (max-width: 736px){
+  html, body{
+    overflow-x: hidden; 
+  }
+  
+  .glide {
+    width: 100%;
+    height: auto;
+  }
+  .container .slider-container .glide .glide__track .glide__slides .glide__slide .hero-img {
+    width: 100%;
+    height: auto;
+    background: #ccc;
+}
+  .nav-mobile{
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 5em;
+    align-content: center;
+    justify-content: center;
+  }
+  .burger{
+    margin-top:10px;
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger div{
+    width: 100%;
+    height: 4px;
+    background: #000;
+    margin-top:5px;
+  }
+  .toggle .l1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .l2{
+    opacity: 0;
+  }
+  .toggle .l3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .nav-shown{
+    transform: translateX(0%)!important;
+  }
+  .nav-mobile .logo{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: ease-in-out 0.4s;
+  }
+  .logo.logo-opacity{
+    opacity: 0;
+  }
+  
+  nav.nav-mobile ul {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(120%);
+    transition: 0.5s ease;
+  }
+  nav.nav-mobile  li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .container nav{
+    display: none;
+  }
+  .hero-img img {
+    height: 100%;
+  }
+  
+  .container .hero-description {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 4.2em 1em;
+  }
+  .arrow-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    left: unset;
+    transform:translateY(-60px);
+  }
+  .glide__slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .arrow-container .arrow-box {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .img-left, .img-right {
+    width: 100%;
+  }
+  .text-center {
+    width: 100%;
+    padding: 4em 3.4em 4em 3.3em;
+  }
+}
